@@ -14,11 +14,11 @@ flowchart TD
     List -->|項目名をクリック| Detail
     List -->|新規追加ボタン| Create
 
-    Create -->|登録ボタン（POST）| List
+    Create -->|リダイレクト| List
 
     Detail -->|編集ボタン| Edit
     Detail -->|削除ボタン| Delete
 
-    Edit -->|更新ボタン（POST）| List
-    Delete -->|削除完了後リダイレクト| List
+    Edit -->|リダイレクト| List
+    Delete -->|リダイレクト| List
 ```
