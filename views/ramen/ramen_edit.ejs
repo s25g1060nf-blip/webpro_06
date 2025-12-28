@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ラーメン屋 編集</title>
+</head>
+<body>
+
+<h2>ラーメン屋 編集</h2>
+
+<form action="/ramen/update/<%= id %>" method="post">
+  店名：<br>
+  <input type="text" name="name" value="<%= data.name %>" required><br><br>
+
+  主な味：<br>
+  <input type="text" name="taste" value="<%= data.taste %>"><br><br>
+
+  特徴：<br>
+  <input type="text" name="feature" value="<%= data.feature %>"><br><br>
+
+  補足：<br>
+  <input type="text" name="note" value="<%= data.note %>"><br><br>
+
+  <button type="submit">更新</button>
+</form>
+
+<br>
+<a href="/ramen">一覧へ戻る</a>
+
+</body>
+</html>

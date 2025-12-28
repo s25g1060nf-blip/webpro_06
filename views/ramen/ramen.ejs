@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ラーメン屋一覧</title>
+</head>
+<body>
+
+<h2>ラーメン屋チェーン一覧</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>店名</th>
+    <th>主な味</th>
+  </tr>
+
+  <% data.forEach(function(r, i){ %>
+    <tr>
+      <td><%= r.id %></td>
+      <td><a href="/ramen/<%= i %>"><%= r.name %></a></td>
+      <td><%= r.taste %></td>
+    </tr>
+  <% }); %>
+</table>
+
+<br>
+
+<a href="/ramen/create">新規追加</a>
+<br>
+<a href="/">トップページへ戻る</a>
+
+</body>
+</html>

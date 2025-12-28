@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>大学追加</title>
+</head>
+<body>
+
+<h2>大学を追加</h2>
+
+<form action="/yamagata" method="post">
+  大学名：<br>
+  <input type="text" name="name" required><br><br>
+
+  学部・学科：<br>
+  <input type="text" name="topping"><br><br>
+
+  偏差値（範囲）：<br>
+  <input type="text" name="deviation"><br><br>
+
+  区分（国立・公立・私立）：<br>
+  <input type="text" name="note"><br><br>
+
+  <button type="submit">登録</button>
+</form>
+
+<br>
+<a href="/yamagata">一覧へ戻る</a>
+
+</body>
+</html>

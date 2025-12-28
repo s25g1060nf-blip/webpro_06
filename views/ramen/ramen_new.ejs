@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ラーメン屋 新規追加</title>
+</head>
+<body>
+
+<h2>ラーメン屋 新規追加</h2>
+
+<form action="/ramen" method="post">
+  店名：<br>
+  <input type="text" name="name" required><br><br>
+
+  主な味：<br>
+  <input type="text" name="taste"><br><br>
+
+  特徴：<br>
+  <input type="text" name="feature"><br><br>
+
+  補足：<br>
+  <input type="text" name="note"><br><br>
+
+  <button type="submit">登録</button>
+</form>
+
+<br>
+<a href="/ramen">一覧へ戻る</a>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ラーメン屋詳細</title>
+</head>
+<body>
+
+<h2>ラーメン屋 詳細</h2>
+
+<p><strong>ID：</strong><%= data.id %></p>
+<p><strong>店名：</strong><%= data.name %></p>
+<p><strong>主な味：</strong><%= data.taste %></p>
+<p><strong>特徴：</strong><%= data.feature %></p>
+<p><strong>補足：</strong><%= data.note %></p>
+
+<br>
+
+<a href="/ramen/edit/<%= id %>">編集</a> |
+<a href="/ramen/delete/<%= id %>">削除</a>
+
+<br><br>
+<a href="/ramen">一覧へ戻る</a>
+
+</body>
+</html>

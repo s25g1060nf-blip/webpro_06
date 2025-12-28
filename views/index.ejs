@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>データ管理ポータル</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .card a:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>データ管理ポータル</h1>
+  <p>以下の３つのシステムからお選びください</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>津田沼駅周辺施設一覧</h2>
+    <p>
+      津田沼駅周辺の飲食店や商業施設，公園などを一覧・詳細表示・追加・編集できます．
+    </p>
+    <a href="/facilities">一覧を見る</a>
+  </div>
+
+  <div class="card">
+    <h2>山形の4年制大学一覧</h2>
+    <p>
+      山形県内の4年制大学について，学部構成や偏差値の目安を確認できます．
+    </p>
+    <a href="/yamagata">一覧を見る</a>
+  </div>
+
+  <div class="card">
+    <h2>ラーメン屋チェーン一覧</h2>
+    <p>
+      ラーメンチェーン店の特徴や主な味を紹介します．
+    </p>
+    <a href="/ramen">一覧を見る</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© Web Programming Practice</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>大学情報 編集</title>
+</head>
+<body>
+
+<h1>大学情報 編集</h1>
+
+<form action="/yamagata/update/<%= id %>" method="post">
+
+  <p>
+    大学名：<br>
+    <input type="text" name="name" value="<%= data.name %>" required>
+  </p>
+
+  <p>
+    学部・学科：<br>
+    <input type="text" name="topping" value="<%= data.topping %>">
+  </p>
+
+  <p>
+    偏差値（目安）：<br>
+    <input type="text" name="deviation" value="<%= data.deviation %>">
+  </p>
+
+  <p>
+    大学区分：<br>
+    <label>
+      <input type="radio" name="note" value="国立"
+        <%= data.note === "国立" ? "checked" : "" %>>
+      国立
+    </label>
+
+    <label>
+      <input type="radio" name="note" value="公立"
+        <%= data.note === "公立" ? "checked" : "" %>>
+      公立
+    </label>
+
+    <label>
+      <input type="radio" name="note" value="私立"
+        <%= data.note === "私立" ? "checked" : "" %>>
+      私立
+    </label>
+  </p>
+
+  <p>
+    <button type="submit">更新</button>
+    <a href="/yamagata">戻る</a>
+  </p>
+
+</form>
+
+</body>
+</html>

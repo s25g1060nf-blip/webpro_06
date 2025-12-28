@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>津田沼駅周辺の施設一覧</title>
+</head>
+<body>
+
+<h2>津田沼駅周辺の施設一覧</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>施設名</th>
+    <th>カテゴリ</th>
+  </tr>
+
+  <% data.forEach((item, index) => { %>
+  <tr>
+    <td><%= item.id %></td>
+    <td><a href="/facilities/<%= index %>"><%= item.name %></a></td>
+    <td><%= item.category %></td>
+  </tr>
+  <% }); %>
+</table>
+
+<br>
+<a href="/facilities/create">新規追加</a>
+<br>
+<a href="/">トップページへ戻る</a>
+
+</body>
+</html>

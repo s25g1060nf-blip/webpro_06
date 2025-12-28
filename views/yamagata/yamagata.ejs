@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>山形県の大学一覧</title>
+</head>
+<body>
+
+<h2>山形県の大学一覧</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>大学名</th>
+    <th>区分</th>
+  </tr>
+
+  <% data.forEach(function(univ, index) { %>
+    <tr>
+      <td><%= univ.id %></td>
+      <td>
+        <a href="/yamagata/<%= index %>">
+          <%= univ.name %>
+        </a>
+      </td>
+      <td><%= univ.note %></td>
+    </tr>
+  <% }); %>
+
+</table>
+
+<br>
+<a href="/yamagata/create">＋ 大学を追加</a>
+
+<br>
+
+<a href="/">トップページへ戻る</a>
+
+</body>
+</html>

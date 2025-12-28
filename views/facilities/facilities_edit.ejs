@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>施設編集</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>施設編集</h1>
+  <form action="/facilities/update/<%= id %>" method="post">
+    <p>施設名: <input type="text" name="name" value="<%= data.name %>" required></p>
+    <p>カテゴリ: 
+      <select name="category" required>
+        <option value="飲食店" <%= data.category === "飲食店" ? "selected" : "" %>>飲食店</option>
+        <option value="商業施設" <%= data.category === "商業施設" ? "selected" : "" %>>商業施設</option>
+        <option value="公共施設" <%= data.category === "公共施設" ? "selected" : "" %>>公共施設</option>
+      </select>
+    </p>
+    <p>徒歩時間: <input type="text" name="walk" value="<%= data.walk %>" required></p>
+    <p>営業時間: <input type="text" name="hours" value="<%= data.hours %>" required></p>
+    <p><button type="submit">更新</button></p>
+  </form>
+  <a href="/facilities">一覧へ戻る</a>
+</body>
+</html>
